@@ -2,7 +2,7 @@ require 'rack'
 
 class MyServer
   def call(env)
-    return [200, {'content-type' => 'text/html'}, [pretty_response]]
+    return [200, {'content-type' => 'text/html'}, pretty_response]
   end
 
   def pretty_response
